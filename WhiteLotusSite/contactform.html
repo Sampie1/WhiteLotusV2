@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Lotus V2</title>
+    <link rel="icon" type="image/x-icon" href="images/Favicon.png">
+    <link rel="stylesheet" href="contactform.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="navbar">
+            <img src="images/tekstlogo.png" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contactform.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Zoek contact</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="a920803b-1cb0-485d-97e3-1c41c09c32af">
+            <input type="text" name="name" placeholder="Jouw Naam" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Jouw Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Type hier je bericht..." class="contact-inputs" required></textarea>
+            <label for="rank" class="label">Als je voor een rank solliciteerd kies dan hier onder een rank.<br> (zo niet, leeg laten) En vermeld in je bericht je discord naam.</label>
+
+            <div class="parent">
+                <div class="div2">
+            <Button type="submit">Versturen <img src="ContactForm_assets/arrow_icon.png" alt=""></Button>
+        </div><!--div2-->
+
+            <div class="div1">
+            <select name="ranks" id="ranks" class="ranks">
+              <option value="leeg" class="leeg">Kies Rank</option>
+              <option value="Co-Founder" class="Co-Founder">Co-Founder</option>
+              <option value="Management" class="Management">Management</option>
+              <option value="SupportTEAM" class="SupportTEAM">SupportTEAM</option>
+              <option value="Developer" class="Developer">Developer</option>
+            </select>
+        </div><!--div1-->
+        </div><!--div parent-->
+
+        </form>
+        <div class="contact-right">
+            <img src="ContactForm_assets/WhiteLotusLogoVector.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
+
+<div class="parent">
+    <div class="div1"> </div>
+    <div class="div2"> </div>
+    </div>

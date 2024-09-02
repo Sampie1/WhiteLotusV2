@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(#000,#009688);
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 1024px){
+    .navbar{
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    }
+    
+    @media (max-width:800px){
+        .navbar{
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+    
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+    
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+    
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+    
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+@media only screen and (min-width: 1024px){
+.row{
+    display: flex;
+    height: 80%;
+    align-items: center;
+}
+hr{
+    flex-basis: 25.5%;
+}
+.col{
+    flex-basis: 35%;
+    margin-left: 9%;
+    margin-top: 5%;
+}
+.mobile-img{
+    display: none;
+}
+}
+
+h1{
+    color: #fff;
+    font-size: 50px;
+}
+
+h3{
+    color: #fff;
+    font-size: 24px;
+}
+
+h5{
+    color: #fff;
+}
+
+p{
+    color: #fff;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.card1{
+    width: 200px;
+    height: 230px;
+    border: #4a7afd;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-image: url(news_images/developergezocht.jpg);
+    background-position: center;
+}
+
+.card2{
+    width: 200px;
+    height: 230px;
+    border: #9445B6;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-image: url(news_images/arcus.jpg);
+    background-position: center;
+}
+
+.card3{
+    width: 200px;
+    height: 230px;
+    border: #fff;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-image: url(news_images/newlogo.jpg);
+    background-position: center;
+}
+
+.card4{
+    width: 200px;
+    height: 230px;
+    border: #cc0000;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-image: url(news_images/WhiteLotusShopClosed.jpg);
+    background-position: center;
+}
+
+.card-container {
+    display: grid;
+    margin-top: 8%; /* afstellen hoogte van cards*/
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-left: 20.8%;
+    max-width: 500px;
+}
+
+@media (max-width:800px){
+    .card-container{
+        display: none;
+    }
+    .col{
+        text-align: center;
+    }
+    .row{
+        height: 35%;
+        align-items: center;
+    }
+    .mobile-img{
+        display: none; /* voor nu img weg laten*/
+        width: 220px;
+        height: 220px;
+        position: absolute;
+        top: 75%;
+        left: 24%;
+        translate: (-50%, -50%);
+    }
+}
+
+
